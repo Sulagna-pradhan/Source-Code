@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="advanced-form" action="#" method="post">
+            <h2>Registration Form</h2>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <span class="tooltip">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                <span class="tooltip">We'll never share your email with anyone else.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required pattern="[0-9]{10}">
+                <span class="tooltip">Enter your 10-digit phone number.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+                <span class="tooltip">Must contain at least 8 characters, including uppercase, lowercase, and numbers.</span>
+                <div id="password-strength"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                <span id="password-match" class="tooltip"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="add-phone-button">Add Another Phone Number</button>
+            </div>
+
+            <div id="additional-phones"></div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
