@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table with Links</title>
+    
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    table, td {
+        width: 100%;
+        display: block;
+    }
+
+    td {
+        margin-bottom: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Numbered Links Table</h1>
+        <table>
+            <tr>
+                <td><a href="Form Template/1/index.html">1</a></td>
+                <td><a href="#">2</a></td>
+                <td><a href="#">3</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">4</a></td>
+                <td><a href="#">5</a></td>
+                <td><a href="#">6</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">7</a></td>
+                <td><a href="#">8</a></td>
+                <td><a href="#">9</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">10</a></td>
+                <td><a href="#">11</a></td>
+                <td><a href="#">12</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
