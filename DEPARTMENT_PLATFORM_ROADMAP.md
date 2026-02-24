@@ -1,11 +1,3 @@
-
-```
-DEPARTMENT_PLATFORM_ROADMAP.md
-```
-
----
-
-```md
 # 🚀 Department Digital Hub – Master Plan & Future Roadmap
 
 > An unofficial, student-led digital ecosystem for the Computer Science Department  
